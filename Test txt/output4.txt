@@ -1,0 +1,20 @@
+[
+  {
+    "Name": "Minh",
+    "ID": 24521234,
+    "Phone": "0123134145",
+    "Course1": 6,
+    "Course2": 7,
+    "Course3": 8,
+    "Average": 7
+  },
+  {
+    "Name": "Ti\u1EBFn",
+    "ID": 24521777,
+    "Phone": "0134123122",
+    "Course1": 10,
+    "Course2": 5,
+    "Course3": 8,
+    "Average": 7.6666665
+  }
+]
