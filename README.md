@@ -155,7 +155,8 @@ _________________________________________________
 - Mở PowerShell tại `D:\lAB2` và chạy:
 
 ```bash
-sqlite3 .\food_database.db
+ sqlite3 .\bin\Debug\net8.0-windows\food_database.db             
 (có 2 file nhưng file được cập nhật là file trong thư mục bin)
 ```
+
 
