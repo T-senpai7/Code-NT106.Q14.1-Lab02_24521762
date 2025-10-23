@@ -1,4 +1,4 @@
-LAB 1 - Windows Forms Application
+LAB 2 - File IO trong lập trình Winforms
 
 **GIỚI THIỆU**
 
@@ -158,3 +158,4 @@ _________________________________________________
 sqlite3 .\food_database.db
 (có 2 file nhưng file được cập nhật là file trong thư mục bin)
 ```
+
