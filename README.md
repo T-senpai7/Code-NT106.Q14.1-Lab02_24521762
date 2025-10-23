@@ -160,3 +160,38 @@ _________________________________________________
 ```
 
 
+### 4) Một số lệnh SQL hữu ích trong shell `sqlite3`:
+```sql
+-- Liệt kê bảng
+.tables
+
+-- Xem cấu trúc bảng
+.schema NguoiDung
+.schema MonAn
+
+-- Đếm số dòng
+SELECT COUNT(*) FROM NguoiDung;
+SELECT COUNT(*) FROM MonAn;
+
+-- Xem dữ liệu
+SELECT * FROM NguoiDung ORDER BY HoVaTen;
+SELECT * FROM MonAn ORDER BY TenMonAn;
+
+-- Join để xem đầy đủ thông tin món + người đóng góp
+SELECT m.IDMA, m.TenMonAn, m.HinhAnh, n.HoVaTen, n.QuyenHan
+FROM MonAn m
+LEFT JOIN NguoiDung n ON m.IDNCC = n.IDNCC
+ORDER BY m.TenMonAn;
+
+-- Tìm kiếm nhanh theo tên món ăn
+SELECT * FROM MonAn WHERE TenMonAn LIKE '%bún%';
+
+-- Đếm số món ăn theo từng người đóng góp
+SELECT n.HoVaTen, COUNT(m.IDMA) AS SoMon
+FROM NguoiDung n
+LEFT JOIN MonAn m ON n.IDNCC = m.IDNCC
+GROUP BY n.HoVaTen;
+
+
+
+
